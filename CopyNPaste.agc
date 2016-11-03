@@ -45,7 +45,7 @@ endfunction text$
 // Opens file in Notepad on Windows - text can then be copy/pasted from Notepad
 // Setting "delete" allows you to use this function similar to CopyIt, by opening Notepad for copying the text, and then deleting the file
 function ShowIt(delete as integer)
-	id = RunApp("cmd","/c notepad %localappdata%\AGKApps\CryptTool\media\temp.txt") //had to use cmd call, rather than direct to notepad so that the path would resolve
+	id = RunApp("cmd","/c notepad %localappdata%\AGKApps\"+GetAppName()+"\media\temp.txt") //had to use cmd call, rather than direct to notepad so that the path would resolve
 	while GetAppRunning(id)
 		sync()
 	endwhile
@@ -54,7 +54,7 @@ endfunction
 
 // Copies contents of the file to the Windows clipboard - text can then be pasted elsewhere
 function CopyIt()
-	id = RunApp("cmd", "/c clip < %localappdata%\AGKApps\CryptTool\media\temp.txt")
+	id = RunApp("cmd", "/c clip < %localappdata%\AGKApps\"+GetAppName()+"\media\temp.txt")
 	while GetAppRunning(id)
 		sync()
 	endwhile
