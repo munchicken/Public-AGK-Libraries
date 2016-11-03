@@ -51,4 +51,6 @@ CopyIt()
 WriteIt(GetEditBoxText(1))
 
 ShowIt(1)
+
+[User copies text from Notepad, then closes Notepad]
 ```
