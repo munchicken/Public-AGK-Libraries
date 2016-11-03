@@ -26,6 +26,7 @@
 // Example 2:
 //  WriteIt(GetEditBoxText(1))
 //  ShowIt(1)
+//  [User copies text from Notepad, then closes Notepad]
 
 // Creates a file and writes text to it
 function WriteIt(text as string)
