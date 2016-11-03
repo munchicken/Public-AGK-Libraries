@@ -20,30 +20,35 @@ This is a work-around for the lack of clipboard support for text boxes.
 
 ***Example Usage***
 
-Situation:  TextBox needs text pasted into it
+**Situation:**  TextBox needs text pasted into it
 
-Example:
+**Example:**
 
-  WriteIt("")
-  
-  ShowIt(0)
-  
-  [User pastes text into Notepad, then saves & closes Notepad]
-  
-  SetEditBoxText(1,ReadIt())
-  
+```Basic
+WriteIt("")
 
-Situation:  Need to copy from TextBox
+ShowIt(0)
 
-Example 1:
+[User pastes text into Notepad, then saves & closes Notepad]
 
-  WriteIt(GetEditBoxText(1))
-  
-  CopyIt()
-  
+SetEditBoxText(1,ReadIt())
+```  
 
-Example 2:
+**Situation:**  Need to copy from TextBox
 
-  WriteIt(GetEditBoxText(1))
-  
-  ShowIt(1)
+**Example 1:**
+
+```Basic
+WriteIt(GetEditBoxText(1))
+
+CopyIt()
+```
+
+
+**Example 2:**
+
+```Basic
+WriteIt(GetEditBoxText(1))
+
+ShowIt(1)
+```
