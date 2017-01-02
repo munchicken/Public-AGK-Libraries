@@ -54,3 +54,5 @@ ShowIt(1)
 
 [User copies text from Notepad, then closes Notepad]
 ```
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+Copyright (c) 2016 Sarah Pierce
